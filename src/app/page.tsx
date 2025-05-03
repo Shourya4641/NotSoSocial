@@ -2,7 +2,7 @@
 // import { getDbUserId } from "@/actions/user.action";
 import CreatePost from "@/components/CreatePost";
 // import PostCard from "@/components/PostCard";
-// import WhoToFollow from "@/components/WhoToFollow";
+import WhoToFollow from "@/components/WhoToFollow";
 import { currentUser } from "@clerk/nextjs/server";
 import { Toaster } from "react-hot-toast";
 
@@ -24,9 +24,9 @@ export default async function Home() {
         </div> */}
       </div>
 
-      {/* <div className="hidden lg:block lg:col-span-4 sticky top-20">
+      <div className="hidden lg:block lg:col-span-4 sticky top-20">
         <WhoToFollow />
-      </div> */}
+      </div>
     </div>
   );
 }
