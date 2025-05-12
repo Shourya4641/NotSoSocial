@@ -1,6 +1,7 @@
 "use client";
 
 import { useUser } from "@clerk/nextjs";
+import ImageUpload from "./ImageUpload";
 import { useState } from "react";
 import { ImageIcon, Loader2Icon, SendIcon } from "lucide-react";
 import toast from "react-hot-toast";
@@ -59,14 +60,14 @@ function CreatePost() {
 
           {(showImageUpload || imageUrl) && (
             <div className="border rounded-lg p-4">
-              {/* <ImageUpload
+              <ImageUpload
                 endpoint="postImage"
                 value={imageUrl}
                 onChange={(url) => {
                   setImageUrl(url);
                   if (!url) setShowImageUpload(false);
                 }}
-              /> */}
+              />
             </div>
           )}
 

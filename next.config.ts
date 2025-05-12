@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ["o4r9z8kytw.ufs.sh"],
+  },
 };
 
 export default nextConfig;
